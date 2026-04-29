@@ -127,7 +127,6 @@ def draw_overheat_arc():
     else:
         pygame.draw.arc(screen, (255, 255, 255), overheating_circle_rect, 0, math.radians(7.2 * barrel_heat), width=10)
 
-
 def reset_game():
     global enemies, bullets, bombs, barrel_heat, overheating, overheat_counter
     global infantry_truck_img, game_state, score, truck_death_counter
@@ -142,8 +141,8 @@ def reset_game():
     score = 0
     truck_death_counter = 0
 
-font_big = pygame.font.SysFont(None, 80)
-font_small = pygame.font.SysFont(None, 40)
+font_big = pygame.font.Font("Jersey10.ttf", 80)
+font_small = pygame.font.Font("Jersey10.ttf", 40)
 
 running = True
 while running:
@@ -287,11 +286,11 @@ while running:
         game_over_text = font_big.render("GAME OVER", True, (255,0,0))
         score_text = font_small.render(f"Score: {score}", True, (255,255,255))
         play_again_rect = pygame.Rect(SCREEN_WIDTH//2 - 100, 400, 200, 60)
-        pygame.draw.rect(screen, (255,255,255), play_again_rect)
+        pygame.draw.rect(screen, (255,255,255), play_again_rect, border_radius=4)
         play_again_text = font_small.render("Play Again", True, (0,0,0))
-        screen.blit(game_over_text, (SCREEN_WIDTH//2 - 200, 200))
-        screen.blit(score_text, (SCREEN_WIDTH//2 - 80, 300))
-        screen.blit(play_again_text, (SCREEN_WIDTH//2 - 70, 415))
+        screen.blit(game_over_text, (SCREEN_WIDTH//2 - game_over_text.get_width() / 2, 200))
+        screen.blit(score_text, (SCREEN_WIDTH//2 - score_text.get_width() / 2, 300))
+        screen.blit(play_again_text, (SCREEN_WIDTH//2 - play_again_text.get_width() / 2 + 2, 407))
 
     pygame.display.update()
     clock.tick(60)
