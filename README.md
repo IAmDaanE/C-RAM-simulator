@@ -14,17 +14,17 @@ git clone git@github.com:IAmDaanE/C-RAM-simulator.git
 
 ### Running the Program
 
-requires: python 3.11 or higher
-1.Install the required libraries.
-```bash
-pip install -r requirements.txt
-```
-
-2.Run the game
-```bash
-//inside the project directory
-python C-RAM_simulator.py
-```
+Requirements: You must have Python 3.6 - 3.13.
+1. Clone the repository or download the zip and unpack it to your directory of choice.
+2. Navigate to that directory in a terminal.
+3. In a venv or the global python version install the needed libraries.
+    ```
+    pip install -r requirements.txt
+    ```
+4. Run the program.
+    ```
+    python C_RAM_simulator.py
+    ```
 
 ### Controls
 
