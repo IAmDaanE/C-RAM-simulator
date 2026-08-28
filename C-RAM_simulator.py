@@ -16,20 +16,20 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("C-RAM_simulator")
 clock = pygame.time.Clock()
 
-c_ram = pygame.transform.scale_by(pygame.image.load("c-ram.png"), 1.5)
-truck_mount = pygame.transform.scale_by(pygame.image.load("truck_mount.png"), 1.5)
-bullet_img = pygame.transform.scale_by(pygame.image.load("bullet.png"), 2)
-background = pygame.transform.scale_by(pygame.image.load("background.png"), 1)
-jet_img = pygame.transform.scale_by(pygame.image.load("jet.png"), 0.5)
-helicopter_img = pygame.transform.scale_by(pygame.image.load("helicopter.png"), 0.5)
-explosion_img = pygame.transform.scale_by(pygame.image.load("explosion.png"), 0.5)
-infantry_truck_img_original = pygame.transform.scale_by(pygame.image.load("infantry_truck.png"), 0.1)
+c_ram = pygame.transform.scale_by(pygame.image.load("assets/c-ram.png"), 1.5)
+truck_mount = pygame.transform.scale_by(pygame.image.load("assets/truck_mount.png"), 1.5)
+bullet_img = pygame.transform.scale_by(pygame.image.load("assets/bullet.png"), 2)
+background = pygame.transform.scale_by(pygame.image.load("assets/background.png"), 1)
+jet_img = pygame.transform.scale_by(pygame.image.load("assets/jet.png"), 0.5)
+helicopter_img = pygame.transform.scale_by(pygame.image.load("assets/helicopter.png"), 0.5)
+explosion_img = pygame.transform.scale_by(pygame.image.load("assets/explosion.png"), 0.5)
+infantry_truck_img_original = pygame.transform.scale_by(pygame.image.load("assets/infantry_truck.png"), 0.1)
 infantry_truck_img = infantry_truck_img_original.copy()
-missile_img = pygame.transform.scale_by(pygame.image.load("missile.png"), 0.75)
-bomb_img = pygame.transform.scale_by(pygame.image.load("bomb.png"), 2)
-small_explosion_img = pygame.transform.scale_by(pygame.image.load("small_explosion.png"), 0.15)
-firing_sound = pygame.mixer.Sound("firing.wav")
-small_explosion_sound = pygame.mixer.Sound("small_explosion_sound.mp3")
+missile_img = pygame.transform.scale_by(pygame.image.load("assets/missile.png"), 0.75)
+bomb_img = pygame.transform.scale_by(pygame.image.load("assets/bomb.png"), 2)
+small_explosion_img = pygame.transform.scale_by(pygame.image.load("assets/small_explosion.png"), 0.15)
+firing_sound = pygame.mixer.Sound("assets/firing.wav")
+small_explosion_sound = pygame.mixer.Sound("assets/small_explosion_sound.mp3")
 firing_channel = pygame.mixer.Channel(0)
 
 c_ram_pivot_offset = (27, 33)
@@ -141,8 +141,8 @@ def reset_game():
     score = 0
     truck_death_counter = 0
 
-font_big = pygame.font.Font("Jersey10.ttf", 80)
-font_small = pygame.font.Font("Jersey10.ttf", 40)
+font_big = pygame.font.Font("assets/Jersey10.ttf", 80)
+font_small = pygame.font.Font("assets/Jersey10.ttf", 40)
 
 running = True
 while running:
