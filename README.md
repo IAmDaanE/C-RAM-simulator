@@ -10,7 +10,7 @@ Control a truck mounted C-RAM turret and defend your truck full of soldiers agai
 
 ### Starting the Game
 
-**Requires:** Python 3.6 - 3.14
+**Requires:** Python 3.9 - 3.14
 1. Install the required libraries, preferably in a venv.
 
     ```
