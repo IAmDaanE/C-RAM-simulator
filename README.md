@@ -1,6 +1,6 @@
 # C-RAM Simulator
 
-Control a truck mounted C-RAM turret and defend your truck full of soldiers against attacking helicopters and jets.
+Take control of a truck mounted C-RAM turret and defend your truck full of soldiers against attacking helicopters and jets.
 
 ---
 
