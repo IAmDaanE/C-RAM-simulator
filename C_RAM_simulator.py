@@ -12,7 +12,7 @@ GAME_OVER = 2
 
 pygame.init()
 pygame.mixer.init(frequency=44100, size=-16, channels=2, buffer=512)
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("C-RAM_simulator")
 clock = pygame.time.Clock()
 
